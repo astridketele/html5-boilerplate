@@ -138,11 +138,10 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'helvetica', monospace;
 }
 
 header {
-    background-image: url('../img/image.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -153,7 +152,7 @@ header h1 {
     padding: 40vh 0;
 }
 
-h1 {
+/*h1 {
     font-size: 48px;
     color: hotpink;
 }
@@ -185,7 +184,7 @@ h5 {
 
 h6 {
     margin: 0 0 10px;
-}
+}*/
 
 p {
     margin: 0 0 10px;
@@ -196,7 +195,7 @@ blockquote {
 }
 
 nav {
-    background: yellow;
+    background:white;
     position: fixed;
     top: 0;
     left: 0;
@@ -205,7 +204,7 @@ nav {
 }
 
 nav:hover {
-    background: hotpink;
+    background: white;
     height: 50vh;
 }
 
@@ -217,66 +216,46 @@ nav ul {
 
 nav li {
     display: inline-block;
+    padding: 40px;
+    color: black; 
 }
 
 aside {
-    background: green;
+    background: white;
     width: 25%;
     float: left;
     display: block;
 }
 
 section {
-    background: blue;
+    background: white;
     max-width: 960px;
     margin: auto;
     width: 100%;
     overflow: auto;
 }
 
-section.video {
-    max-width: 100%;
-    position: relative;
-}
-
-section.video video {
-    width: 100%;
-}
-
-section.video h3 {
-    position: absolute;
-    color: hotpink;
-    width: 100%;
-    text-align: center;
-    margin: -8px 0 0;
-    top: 50%;
-}
-
-section.video button {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    margin-left: -19px;
-    font-family: 'Roboto Mono', monospace;
+div.subheading{
+    color: white;
 }
 
 section.grid {
     text-align: center;
 }
 
-section.grid div.grid-item {
-    width: 25%;
+section.grid .column {
+    background: #ffebe0;
+    width: 50%;
+    float: left;
+}
+
+/*section.grid div.grid-item {
+    width: 48%;
     margin: 1%;
     height: 150px;
     background: salmon;
     display: inline-block;
-}
 
-input[type="text"] {
-    background: yellow;
-    width: 50%;
-    line-height: 2;
-}
 
 input[type="submit"] {
     background: red;
@@ -325,7 +304,7 @@ footer {
  */
 
 .visuallyhidden {
-    border: 0;
+    border: 1;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     height: 1px;
