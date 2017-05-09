@@ -31,6 +31,9 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
+
+
+</html>
 ol, ul {
     list-style: none;
 }
@@ -138,7 +141,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: 'helvetica', monospace;
+    font-family:'Poppins', sans-serif;
     padding-top: 50px;
 }
 
@@ -152,15 +155,17 @@ body {
 }
 
 .subheading {
-    width: 151px;
+    width: 200px;
     position: absolute;
-    z-index: 0;
+    z-index: 5;
     top: 90px;
     color: brown;
-    font-size: 12px
-    border: 10px;
+    font-size: 12px;
+    padding-left: 5px;
+   
 
 }
+
 
 /*h1 {
     font-size: 48px;
@@ -196,9 +201,40 @@ h6 {
     margin: 0 0 10px;
 }*/
 
+
 img {
     width: 100%;
     height: auto;
+}
+
+#image1 {
+    padding-bottom:10px;
+ }
+
+ #image2 {
+    padding-top:10px;
+    padding-bottom: 10px;
+ }
+
+ .boxed {
+  background-color: #350000;
+  width: 100%;
+  color: white;
+  text-align: center;
+  min-height: 100px;
+}
+
+.column.right .boxed {
+    min-height: 102px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.column.left .boxed {
+    height:105px;
+    padding-top: 92px;
+    font-size: 25px;
+    text-align: center;
 }
 
 p {
@@ -208,6 +244,7 @@ p {
 blockquote {
     margin: 0 0 10px;
 }
+
 
 nav {
     position: relative;
@@ -229,7 +266,8 @@ nav li {
     display: inline-block;
     text-align: right;
     font-size: 14px;
-    font-family: Helvetica;
+    font-family:'Poppins', sans-serif;
+;
     text-decoration: none;
 }
 
@@ -239,6 +277,18 @@ nav li a{
     padding: 45px;
 
 }
+nav li b{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 45px;
+    background: #ffebe0;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
 
 aside {
     background: white;
@@ -255,6 +305,8 @@ section {
     overflow: visible;
 }
 
+
+
 section.grid {
     text-align: center;
 }
@@ -262,13 +314,20 @@ section.grid {
 section.grid .column {
     background: #ffebe0;
     width: 50%;
+    height: 800px;
     float: left;
+    padding: 30px 5px 30px 30px;
+    box-sizing: border-box;
 }
 
-/*section.grid div.grid-item {
-    width: 48%;
+section.grid .column.right {
+    padding: 30px 30px 30px 5px;
+}
+
+section.grid div.grid-item {
+    width: 50%;
     margin: 1%;
-    height: 150px;
+    height: 300px;
     background: salmon;
     display: inline-block;
 
