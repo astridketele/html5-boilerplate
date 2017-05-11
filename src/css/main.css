@@ -216,25 +216,60 @@ img {
     padding-bottom: 10px;
  }
 
+ #button1 {
+    height:auto;
+    width:30%;
+    float:left;
+    padding-left: 50px;
+    margin-top: -20px;
+    padding-bottom: 7px;
+ }
+
+ #button2 {
+    height:auto;
+    width:30%;
+    float: right;
+    padding-right: 50px;
+    margin-top: -20px;
+    padding-bottom: 7px;
+ }
+
  .boxed {
   background-color: #350000;
   width: 100%;
   color: white;
   text-align: center;
-  min-height: 100px;
 }
 
 .column.right .boxed {
-    min-height: 102px;
-    padding-top: 20px;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 20px;
+    overflow: auto;
+    box-sizing: border-box;
 }
 
-.column.left .boxed {
-    height:105px;
-    padding-top: 92px;
-    font-size: 25px;
-    text-align: center;
+.column.left .video-container {
+    position: relative;
+    background-color: #350000;
+    height: 823px;
+}
+
+.column.left .video-container video {
+    width: 330px;
+    height: auto;
+    top: 98px;
+    left: 53px;
+    position: absolute;
+    z-index: 2;
+}
+
+.column.left .video-container img {
+    width: 410px;
+    height: auto;
+    top: 18px;
+    left: 13px;
+    position: absolute;
+    z-index: 1;
 }
 
 p {
@@ -248,7 +283,7 @@ blockquote {
 
 nav {
     position: relative;
-    height: 230px;
+    height: 200px;
     background: transparent;
     z-index: 1;
 }
@@ -309,12 +344,13 @@ section {
 
 section.grid {
     text-align: center;
+    overflow: auto;
 }
 
 section.grid .column {
     background: #ffebe0;
     width: 50%;
-    height: 800px;
+    height: 1300px;
     float: left;
     padding: 30px 5px 30px 30px;
     box-sizing: border-box;
@@ -330,7 +366,7 @@ section.grid div.grid-item {
     height: 300px;
     background: salmon;
     display: inline-block;
-
+}
 
 input[type="submit"] {
     background: red;
@@ -348,14 +384,39 @@ article img {
     height: auto;
 }
 
-footer {
-    background: red;
-    float: left;
-    clear: both;
-    width: 100%;
+footer{
+    position: relative;
+    padding: 10px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+footer li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 60px;
+    padding-bottom: 40px;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 90px;
+    font-size: 14px;
+    font-family:'Poppins', sans-serif;
+}
+
+footer li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+   
 
 /* ==========================================================================
    Helper classes
