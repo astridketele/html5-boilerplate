@@ -241,6 +241,14 @@ img {
   text-align: center;
 }
 
+ .subboxed {
+  background-color: #f9b8ae;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 557px;
+}
+
 .column.right .boxed {
     padding: 20px;
     font-size: 20px;
@@ -350,7 +358,7 @@ section.grid {
 section.grid .column {
     background: #ffebe0;
     width: 50%;
-    height: 1300px;
+    height: 1453px;
     float: left;
     padding: 30px 5px 30px 30px;
     box-sizing: border-box;
