@@ -83,7 +83,7 @@ body {
 ul {
     font-size: 20px;
     line-height: 100px;
-    color: black;
+    color: white;
     padding:40px;
     list-style: none;
 }
@@ -232,21 +232,22 @@ img {
  }
 
  #image2 {
+    padding-top: 0px;
 
  }
 
- #button1 {
+ /*#button1 {
     height:auto;
     width:30%;
- }
+ }*/
 
- #button2 {
+/* #button2 {
     height:auto;
     width:30%;
- }
+ }*/
 
  .boxed {
-  background-color: #1f1f1f;
+  background-color:#3b3b45;
   width: 100%;
   color: white;
   text-align: center;
@@ -257,11 +258,14 @@ img {
 }
 
  .subboxed {
-  background-color: #c5c7e4;
   width: 100%;
   color: white;
   text-align: center;
-  height: 550px;
+  background: #3b3b45; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#3b3b45, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#3b3b45, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#3b3b45, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#3b3b45, white); /* Standard syntax (must be last) */
 }
 
 
@@ -274,15 +278,14 @@ img {
 
 .column.left .video-container {
     position: relative;
-    background-color: #1f1f1f;
     height: 823px;
 }
 
 .column.left .video-container video {
     width: 330px;
     height: auto;
-    top: 98px;
-    left: 73px;
+    top: 175px;
+    left: 60px;
     position: absolute;
     z-index: 2;
 }
@@ -290,8 +293,8 @@ img {
 .column.left .video-container img {
     width: 410px;
     height: auto;
-    top: 18px;
-    left: 33px;
+    top: 100px;
+    left: 20px;
     position: absolute;
     z-index: 1;
 }
@@ -325,7 +328,7 @@ nav li {
 nav li a{
     text-decoration: none;
     color: black;
-    padding: 15px;
+    padding: 1px;
 
 }
 nav li b{
@@ -342,8 +345,7 @@ nav li b{
 }
 
 section {
-    background: white;
-    max-width: 85%;
+    max-width: 75%;
     margin: auto;
     width: 100%;
     overflow: visible;
@@ -353,10 +355,16 @@ section {
 section.grid {
     text-align: center;
     overflow: auto;
+    background-image: url('../img/citymap.png');
+    background-position-y: -32px;
+    background-repeat: repeat;
+    background-color: #ebedff;
+    background-size: 25%;
+
 }
 
 section.grid .column {
-    width: 48.5%;
+    width: 50%;
     height: 2000px;
     float: left;
     box-sizing: border-box;
@@ -364,13 +372,11 @@ section.grid .column {
 
 
 section.grid .column.right {
-    background-color: white;
-    margin-left: 1.5%;
+
 }
 
 section.grid .column.left {
-    background-color: white;
-    margin-right: 1.5%;
+    margin-right: 0%;
 }
 
 .no-margin {
