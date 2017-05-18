@@ -275,7 +275,7 @@ section {
 }
 
 
-section.grid, section {
+section.grid, section.subscribe {
     text-align: center;
     overflow: auto;
     background-image: url('../img/citymap.png');
@@ -317,22 +317,23 @@ article img {
 }
 
 .container {
-    background-color: black;
-    background-position-y: -32px;
-    background-repeat: repeat;
-    background-size: 25%;
-    opacity: 0.95;
-    color:white;
-    font-size: 16px;
-    height: 500px;
-    padding-top: 166px;
+  align-items: center;
+  background-color: black;
+  opacity: 0.95;
+  color:white;
+  font-size: 16px;
+  height: 500px;
+  padding-top: 166px;
 }
+
 
 .input-group {
     font-size: 14px;
     color: pink;
     padding-top: 200px;
 }
+
+
 
 footer{
     position: relative;
