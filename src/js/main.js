@@ -23,28 +23,28 @@ $(window).resize(function() {
 	console.log('resize columnLeftMargin ', columnLeftMargin);
 	console.log('resize columnRightMargin ', columnRightMargin);
 });
+/* JS scripts are added see github repo for more 
+https://github.com/fralec/ElegantJS */
 
-$(window).scroll(function() {
-	console.log('scroll');
+$('#stay').elegant({
+    clickNextToClose: true,
+    newTab: true,
+    facebook: {
+        id: 'alec.vonbarnekow'
+    },
+    twitter: {
+        id: 'fralec_'
+    },
+    github: {
+        id: 'fralec'
+    },
+    website: {
+        id: 'https://fralec.com'
+    },
+    instagram: {
+        id: 'fralec__'
+    }
 });
-
 /*
 http://tympanus.net/Development/ProgressButtonStyles/
 */
-function validateEmail(email) {
-    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    return re.test(email);
-}
-$("#signup-button").click(function(e){
-  var $email = $("#subscribe-email").val();
-  if(validateEmail($email)){
-    //alert("Valid email!");
-    $(".message-content").html("Now you are subscribed!");
-  }else{
-    //alert("Invalid email!");
-    $(".message-content").html("E-mail address is not valid.");
-  }
-  
-  $(".subscribe-message").fadeIn(1500).css("display","block").delay(2000).fadeOut(500);
-  e.preventDefault();
-});

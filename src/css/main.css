@@ -68,7 +68,27 @@ body {
     font-family:'Poppins', sans-serif;
     padding-top: 0px;
 }
+.footer ul li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 60px;
+    padding-bottom: 40px;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 40px;
+    font-size: 14px;
+    font-family:'Poppins', sans-serif;
+}
 
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+}
 .logo {
     width: 129px;
     height: 51px;
@@ -80,23 +100,23 @@ body {
 }
 
 ul {
-    font-size: 20px;
-    line-height: 100px;
+    font-size: 18px;
+    line-height: 33px;
     color: white;
-    padding:40px;
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
     list-style: none;
-    padding-bottom: 200px;
+    text-align: center;
 }
 
-ul li {
+.subboxed ul li {
     font-size: 18px;
     color: white;
     position: relative;
     text-align: left;
-    line-height: 34px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 40px;
+    line-height: 33px;
+    padding-bottom: 85px;
 }
 
 
@@ -142,13 +162,12 @@ img {
 }
 
 #image1 {
-    opacity: 0.98;
+    opacity: 0.99;
    
  }
 
  #image2 {
-    padding-top: 0px;
-    opacity: 0.98;
+    opacity: 0.99;
 
  }
 
@@ -162,17 +181,18 @@ img {
     width:30%;
  }*/
 
- .boxed {
-  background: #373740; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#373740, #3c3c47); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#373740, #3c3c47); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#373740, #3c3c47); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#373740, #3c3c47); /* Standard syntax (must be last) */
+
+.column.right .titletrax {
+  background: #3b3b45; /* For browsers that do not support gradients */
   width: 100%;
-  padding: 10px;
+  padding: 40px;
   color: white;
-  text-align: center;
-  opacity: 0.95;
+  text-align: left;
+  font-size: 42px;
+  font-weight: bold;
+  padding-left: 150px;
+  overflow: hidden;
+  opacity: 0.99;
 }
 
 .boxed p {
@@ -188,15 +208,17 @@ img {
   background: -o-linear-gradient(#3b3b45, black); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#3b3b45, black); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#3b3b45, black); /* Standard syntax (must be last) */
-  opacity: 0.94;
+  opacity: 0.99;
 }
 
 
 .column.right .boxed {
-    padding: 40px;
+    padding: 35px;
     font-size: 43px;
+    font-weight: bold;
     overflow: auto;
     box-sizing: border-box;
+    color:transparent;
 }
 
 .column.left .video-container {
@@ -208,7 +230,7 @@ img {
     width: 330px;
     height: auto;
     top: 175px;
-    left: 60px;
+    left: 105px;
     position: absolute;
     z-index: 2;
 }
@@ -217,11 +239,10 @@ img {
     width: 410px;
     height: auto;
     top: 100px;
-    left: 20px;
+    left: 65px;
     position: absolute;
     z-index: 1;
 }
-
 
 
 nav {
@@ -242,6 +263,7 @@ nav ul {
 
 nav li {
     display: inline-block;
+    padding-top: 30px;
     text-align: right;
     font-size: 14px;
     font-family:'Poppins', sans-serif;
@@ -251,20 +273,15 @@ nav li {
 nav li a{
     text-decoration: none;
     color: black;
-    padding: 1px;
-
+    padding: 40px;
 }
+
 nav li b{
     text-decoration: none;
     color: #ff0535;
-    text-align: center;
-    /* padding: 45px; */
-    /* background: black; */
-    /* padding-bottom: 10px; */
-    /* padding-right: 40px; */
-    /* padding-left: 40px; */
-    /* padding-top: 10px; */
+    text-align: right;
     font-weight: bold;
+    padding-left: 30px;
 }
 
 section {
@@ -275,7 +292,7 @@ section {
 }
 
 
-section.grid, section.subscribe {
+section.grid{
     text-align: center;
     overflow: auto;
     background-image: url('../img/citymap.png');
@@ -283,6 +300,7 @@ section.grid, section.subscribe {
     background-repeat: repeat;
     background-color: #ebedff;
     background-size: 25%;
+    animation: background-move 10s infinite;
 }
 
 section.grid .column {
@@ -316,24 +334,6 @@ article img {
     height: auto;
 }
 
-.container {
-  align-items: center;
-  background-color: black;
-  opacity: 0.95;
-  color:white;
-  font-size: 16px;
-  height: 500px;
-  padding-top: 166px;
-}
-
-
-.input-group {
-    font-size: 14px;
-    color: pink;
-    padding-top: 200px;
-}
-
-
 
 footer{
     position: relative;
@@ -342,39 +342,80 @@ footer{
     box-sizing: border-box;
 }
 
-footer li{
-    list-style: none;
+div.share{
+    background-color: black;
+    width: 50%;
+    height: 600px;
+    padding-top: -600px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+    content: center;
+    margin-top: -30px;
+    opacity: 0.99;
+}
+
+.share button {
+    position: absolute;
+    min-width: 200px;
+    width: 20%;
+    border: 3px solid white;
+    margin: auto;
+    height: 4em;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-self: center;
+    left: 40%;
+    top: 215%;
+    background:transparent;
+}
+
+ul.titleshare {
     text-align: center;
-    display: inline-block;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: black;
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 3rem;
+  text-transform: uppercase;
+  animation: background-move 10s infinite;
+  background-image: url('../img/citymap.png');
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   overflow: hidden;
+   margin-top: 150px;
+}
+
+@keyframes background-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  
+  25% {
+    background-position: 5% 10%;
+  }
+  
+  50% {
+    background-position: 15% 15%;
+  }
+  
+  75% {
+    background-position: 10% 5%;
+  }
+  
+  100% {
+    background-position: 0% 0%;
+  }
+
+ul.aboutshare {
+    color: white;
     text-align: center;
-    padding: 60px;
-    padding-bottom: 40px;
-    padding-right: 90px;
-    padding-left: 90px;
-    padding-top: 40px;
-    font-size: 14px;
-    font-family:'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: initial;
 }
 
-footer li a{
-    text-decoration: none;
-    color: black;
-}
-
-/*
-    Mobile
-*/
-@media (max-width: 768px) {
-    section.grid .column.left{
-        width: 100%;
-        height: 700px;
-    }
-    div.column.right{
-        width:100%;
-    }
 
 
-}
+
